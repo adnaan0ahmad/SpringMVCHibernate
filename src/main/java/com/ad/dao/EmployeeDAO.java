@@ -2,15 +2,22 @@ package com.ad.dao;
 
 import java.util.List;
 
-import com.ad.model.Employee;
+import com.ad.bean.Employee;
+
+/**
+ * 
+ * @author Adnaan
+ *
+ *
+ */
 
 public interface EmployeeDAO {
 
-	public void addEmployee(Employee employee);
+	public boolean addEmployee(Employee employee);
 
 	public List<Employee> getAllEmployees();
 
-	public void deleteEmployee(Integer employeeId);
+	public boolean deleteEmployee(Integer employeeId);
 
 	public Employee updateEmployee(Employee employee);
 
